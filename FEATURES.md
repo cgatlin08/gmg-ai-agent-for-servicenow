@@ -2,7 +2,7 @@
 <!-- Copyright 2026 GMG Technology LLC -->
 # GMG AI Agent for ServiceNow (open source): features
 
-Describes the update sets built from source commit 1a7ecb1.
+Describes the update sets built from source commit bc0499b (v1.0.1).
 
 ## Chat panel
 - A floating chat panel on desktop pages (global UI script `gmg_ai_agent_panel`, the only UI script that is active after install).

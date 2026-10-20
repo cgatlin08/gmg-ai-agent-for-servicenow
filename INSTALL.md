@@ -8,10 +8,10 @@ You need a ServiceNow instance and an account with the admin role. Install it on
 
 | Order | File | Update set after import | Updates | sha256 |
 |---|---|---|---|---|
-| 1 | update_sets/gmg_ai_agent_global.xml | GMG AI Agent open source (global) | 3 | a202e99bd33c027b2b6f209e04b896ddbb3262c8cfcfbea8965a9ad6fe0913f9 |
-| 2 | update_sets/gmg_ai_agent_scoped.xml | GMG AI Agent open source (scoped) | 318 | 2afe3e66337f3d5f1987d6d9b28db64a610bd70a02247548b6e1c6383c425876 |
+| 1 | update_sets/gmg_ai_agent_global.xml | GMG AI Agent open source (global) | 3 | ec20454c13916c55e0869a81aae209f49363df466f4b8df82b7e1550a6d689fb |
+| 2 | update_sets/gmg_ai_agent_scoped.xml | GMG AI Agent open source (scoped) | 318 | da1b5c7869cdb558a418f8d31ad589aa0ee9d5c8f8f9728dfc175156aea035de |
 
-Built from source commit 1a7ecb1. Tested on glide-australia-02-11-2026__patch7-09-17-2026_10-06-2026_0905 (ServiceNow Australia release, Patch 7), 2026-10-20. To check a download, compare its sha256 (`sha256sum <file>`) with this table or SHA256SUMS.
+v1.0.1, built from source commit bc0499b. v1.0.0 (source 1a7ecb1) was tested on glide-australia-02-11-2026__patch7-09-17-2026_10-06-2026_0905 (ServiceNow Australia release, Patch 7), 2026-10-20. The v1.0.1 live install test is pending. To check a download, compare its sha256 (`sha256sum <file>`) with this table or SHA256SUMS.
 
 **Changes go live once the user confirms.** The agent writes only to the record you have open, and only after you click Accept. If that record is active code, the confirmed change goes live immediately. The update set tracks the change; it does not hold it back for review. Review the diff, and test in a sub-production instance first.
 
@@ -19,7 +19,7 @@ Built from source commit 1a7ecb1. Tested on glide-australia-02-11-2026__patch7-0
 Do these steps for the global file first, then the same steps for the scoped file:
 1. Go to **System Update Sets > Retrieved Update Sets** and choose **Import Update Set from XML**. Upload the file.
 2. Open the retrieved update set it creates (names above) and click **Preview Update Set**. Resolve any problems before you go on.
-   In our test install both sets previewed with 0 problems and 0 collisions.
+   In our v1.0.0 test install both sets previewed with 0 problems and 0 collisions.
 3. Click **Commit Update Set**.
 
 ## After install
