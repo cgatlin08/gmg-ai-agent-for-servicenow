@@ -25,6 +25,8 @@ Do these steps for the global file first, then the same steps for the scoped fil
 ## After install
 1. **Give users the role x_gmg_ai.user.** Only users with this role see the GMG AI Agent menu and the chat panel.
    The Providers and Settings modules are admin-only.
+   **The chat panel can take a minute to appear.** Once you add the role, log out and back in, then open a normal list or form, such as the incident list.
+   If the launcher still isn't there after a minute, do a hard refresh, or clear the cache by going to `/cache.do` as an admin.
 2. **Add an AI provider** under **GMG AI Agent > Providers**. None are installed.
    - Type **anthropic** for Claude, or **openai_compatible** for OpenAI, xAI Grok and other OpenAI-compatible APIs.
    - Fill in name, base URL, model and API key. For openai_compatible the agent calls `<base URL>/chat/completions`.
