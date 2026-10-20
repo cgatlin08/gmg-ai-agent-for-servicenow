@@ -11,7 +11,7 @@ You need a ServiceNow instance and an account with the admin role. Install it on
 | 1 | update_sets/gmg_ai_agent_global.xml | GMG AI Agent open source (global) | 3 | ec20454c13916c55e0869a81aae209f49363df466f4b8df82b7e1550a6d689fb |
 | 2 | update_sets/gmg_ai_agent_scoped.xml | GMG AI Agent open source (scoped) | 318 | da1b5c7869cdb558a418f8d31ad589aa0ee9d5c8f8f9728dfc175156aea035de |
 
-v1.0.1, built from source commit bc0499b. v1.0.0 (source 1a7ecb1) was tested on glide-australia-02-11-2026__patch7-09-17-2026_10-06-2026_0905 (ServiceNow Australia release, Patch 7), 2026-10-20. The v1.0.1 live install test is pending. To check a download, compare its sha256 (`sha256sum <file>`) with this table or SHA256SUMS.
+v1.0.1, built from source commit bc0499b. v1.0.0 (source 1a7ecb1) was tested on glide-australia-02-11-2026__patch7-09-17-2026_10-06-2026_0905 (ServiceNow Australia release, Patch 7), 2026-10-20. v1.0.1 passed a live install smoke test from this repo on a fresh PDI, 2026-10-20. To check a download, compare its sha256 (`sha256sum <file>`) with this table or SHA256SUMS.
 
 **Changes go live once the user confirms.** The agent writes only to the record you have open, and only after you click Accept. If that record is active code, the confirmed change goes live immediately. The update set tracks the change; it does not hold it back for review. Review the diff, and test in a sub-production instance first.
 

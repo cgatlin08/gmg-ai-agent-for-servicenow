@@ -10,7 +10,7 @@ An AI chat panel for ServiceNow that works with the LLM provider you choose (Ant
 Install the global file first, then the scoped one. See [INSTALL.md](INSTALL.md) for steps and checksums and [FEATURES.md](FEATURES.md) for what the agent does.
 
 ## Tested version
-v1.0.1, built from source commit bc0499b. v1.0.0 (source 1a7ecb1) was install-tested on glide-australia-02-11-2026__patch7-09-17-2026_10-06-2026_0905 (ServiceNow Australia release, Patch 7), 2026-10-20. The v1.0.1 live install test is pending.
+v1.0.1, built from source commit bc0499b. v1.0.0 (source 1a7ecb1) was install-tested on glide-australia-02-11-2026__patch7-09-17-2026_10-06-2026_0905 (ServiceNow Australia release, Patch 7), 2026-10-20. v1.0.1 passed a live install smoke test from this repo on a fresh PDI, 2026-10-20.
 
 ## Important: changes are live
 **Changes go live once the user confirms.** The agent writes only to the record you have open, and only after you click Accept. If that record is active code, the confirmed change goes live immediately. The update set tracks the change; it does not hold it back for review. Review the diff, and test in a sub-production instance first.
